@@ -1,9 +1,9 @@
-@media(max-width:850px){
+@media(max-width:1235px){
     .menu-item{
         display: none;
     }
    .header-container{
-    grid-template-columns: 10% 85% 5%;
+    grid-template-columns: 5% 75% 5%;
     min-width: 665px;
    }
    .login{
@@ -13,14 +13,45 @@
     display: block;
    }   
    .contrnt-left-hrader-boton h1{
-    font-size: 0.8rem;
+    font-size: 3rem;
+   }
+   .contrnt-left-hrader-boton p{
+    font-size: 1.5em;
+    width: 26rem;
+    
+    line-height: 2rem;
+    margin: -2rem 0rem -1rem 0;
+   }
+   .contrnt-left-hrader-boton{
+    margin-left: 4rem;
    }
    .header-botton{
     margin-top: 2rem;
    }
 }
-@media(max-width:790px){
-     .contrnt-left-hrader-boton{
-    font-size: 0.8rem;
+
+
+
+@media(max-width:995px){
+   
+   .contrnt-left-hrader-boton h1{
+    font-size: 2rem;
+    width: 19rem;
+   }
+   .contrnt-left-hrader-boton p{
+    font-size: 1em;
+    width: 15rem;
+    
+    line-height: 2rem;
+    margin: 0rem 0rem -1rem 0;
    }
 }
+@media(max-width:750px){
+    .header-botton{
+        display: grid;
+        grid-template-rows: repeat(2 , 1fr);
+        height: 100rem;
+        width: 100%;
+    }
+}
+

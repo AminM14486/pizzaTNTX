@@ -1,0 +1,218 @@
+
+
+
+body{
+    overflow-x: hidden;
+    /* font-weight: 900; */
+     font-family: "Poppins", sans-serif;
+}
+:root{
+    --color-red : #c90000;
+    --color-gray : #7c7d7d;
+    --color-white : #fff;
+    --color-dgray : #504f4f;
+    --color-lgray : rgba(241, 241, 241, 0.4);
+    --color-yellow : #FFC300;
+}
+img{
+    width: 100%;
+    /* height: 100%; */
+}
+.container-site{
+    /* max-width: 1170px; */
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem;
+    /* background-color: #7c7d7d; */
+}
+.header-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4% 52% 43% ;
+    align-items: center;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+
+}
+.menu-item{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    gap: 3rem;
+    font-weight: 600;
+    margin-left: 4rem;
+}
+.menu-item li a{
+    text-decoration: none;
+    color: var(--color-gray);
+}
+.menu-item>:first-child a{
+    text-decoration: none;
+    color: var(--color-red);
+}
+.logo{
+    margin-left: 0;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}   
+.login button{
+    height: 2rem;
+    width: 5rem;
+    border-radius: 50PX;
+    border:1px solid var(--color-red) ;
+}
+.signin{
+    margin-right: 2%;
+}
+.loginbtn{
+    background-color: var(--color-red);
+    color: var(--color-white);
+    
+}
+.bugger{
+    display: none;
+}
+.menu-item-side{
+     display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 3rem; 
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    left: 0;
+    top: 0;
+    border-right: 1px solid;
+    width: 200px;
+    background-color: var(--color-white);
+    transform: translateX(-1000px);
+    transition: ease-out 250ms;
+}
+.menu-item-side li a{
+    text-decoration: none;
+    color: var(--color-gray);
+}
+.menu-item-side>:first-child a{
+    text-decoration: none;
+    color: var(--color-red);
+}
+
+#menu-side:checked ~ul{
+  transform: translateX(-0px);
+}
+#close-menu{
+    display: none;
+    color: var(--color-gray );
+}
+#menu-side:checked + label img:first-child{
+    display: none;
+}
+#menu-side:checked +label svg{
+    display: block;
+}
+
+.header-botton{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+}
+.contrnt-left-hrader-boton{
+    align-content: center;
+    width: 53%;
+
+}
+.contrnt-left-hrader-boton h1{
+    color: var(--color-red);
+    font-size: 2.5rem;
+    width:30rem;
+}
+/* .contrnt-left-hrader-boton{
+    
+    color: var(--color-red);
+} */
+.order-food{
+    margin-top: 4rem;
+}
+.order-food span:first-child{
+    font-weight: 500;
+}
+.imglogoinheader{
+    border-radius: 10px;
+}
+.order-food span:last-child{
+    font-weight: 900;
+    position: relative;
+}
+.parent-action-order{
+    display: flex;
+    align-items: center;
+    /* background-color: #504f4f; */
+    margin-top: 1rem;
+}
+.action-order{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    justify-content: space-around;
+    font-weight: 400;
+    box-shadow: 2px 2px 9px black;
+    border-radius: 50px;
+    min-width: 7rem;
+    height: 2.5rem;
+    line-height: 1.5rem;
+    margin-right: 2rem;
+}
+.parent-action-order button{
+    background-color: var(--color-yellow) ;
+    border: none;
+    min-width: 9rem;
+    height: 3rem;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 22% 50%;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.parent-action-order button svg{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.delivery-box{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+    background-color: var(--color-lgray);
+    width: 8rem;
+    height: 3rem;
+    border-radius: 50px 50px 0px 50px;
+    position: absolute;
+    top: 8rem;
+    /* right: 50rem; */
+    margin-left: -6rem;
+     font-family: "Poppins", sans-serif;
+    
+    
+}
+.delivery-box div:first-child{
+     display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    font-weight:400;
+}
+.delivery-box div:first-child span{
+    align-self: center;
+}
+.delivery-box div:last-child{
+    text-align: center;
+    color: var(--color-gray);
+    font-weight: 200;
+}
+.delivery-box svg{
+    margin: auto;
+}

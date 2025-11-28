@@ -1,0 +1,26 @@
+@media(max-width:850px){
+    .menu-item{
+        display: none;
+    }
+   .header-container{
+    grid-template-columns: 10% 85% 5%;
+    min-width: 665px;
+   }
+   .login{
+    justify-content: center;
+   }
+   .bugger{
+    display: block;
+   }   
+   .contrnt-left-hrader-boton h1{
+    font-size: 0.8rem;
+   }
+   .header-botton{
+    margin-top: 2rem;
+   }
+}
+@media(max-width:790px){
+     .contrnt-left-hrader-boton{
+    font-size: 0.8rem;
+   }
+}
